@@ -74,7 +74,7 @@ namespace Assignment6
         public override string ToString()
         {
             return string.Format(
-                "{0, -20} {1, 10} {2, -46}, {3, -20}",
+                "{0, -28} {1, -22} {2, -22} {3, -20}",
                 date.ToLongDateString(),
                 GetTimeString(),
                 GetPriorityString(),

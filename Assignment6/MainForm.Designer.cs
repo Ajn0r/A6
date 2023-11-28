@@ -80,37 +80,39 @@
             // 
             mnuFileNew.Name = "mnuFileNew";
             mnuFileNew.ShortcutKeys = Keys.Control | Keys.N;
-            mnuFileNew.Size = new Size(141, 22);
+            mnuFileNew.Size = new Size(180, 22);
             mnuFileNew.Text = "New";
             mnuFileNew.Click += mnuFileNew_Click;
             // 
             // toolStripMenuItem1
             // 
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(138, 6);
+            toolStripMenuItem1.Size = new Size(177, 6);
             // 
             // mnuFileOpen
             // 
             mnuFileOpen.Name = "mnuFileOpen";
-            mnuFileOpen.Size = new Size(141, 22);
+            mnuFileOpen.Size = new Size(180, 22);
             mnuFileOpen.Text = "Open file";
+            mnuFileOpen.Click += mnuFileOpen_Click;
             // 
             // mnuFileSave
             // 
             mnuFileSave.Name = "mnuFileSave";
-            mnuFileSave.Size = new Size(141, 22);
+            mnuFileSave.Size = new Size(180, 22);
             mnuFileSave.Text = "Save file";
+            mnuFileSave.Click += mnuFileSave_Click;
             // 
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(138, 6);
+            toolStripMenuItem2.Size = new Size(177, 6);
             // 
             // mnuFileExit
             // 
             mnuFileExit.Name = "mnuFileExit";
             mnuFileExit.ShortcutKeys = Keys.Alt | Keys.F4;
-            mnuFileExit.Size = new Size(141, 22);
+            mnuFileExit.Size = new Size(180, 22);
             mnuFileExit.Text = "Exit";
             mnuFileExit.Click += mnuFileExit_Click;
             // 
@@ -205,7 +207,7 @@
             // lblListDescription
             // 
             lblListDescription.AutoSize = true;
-            lblListDescription.Location = new Point(423, 21);
+            lblListDescription.Location = new Point(323, 21);
             lblListDescription.Name = "lblListDescription";
             lblListDescription.Size = new Size(67, 15);
             lblListDescription.TabIndex = 4;

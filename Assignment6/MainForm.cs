@@ -91,5 +91,30 @@ namespace Assignment6
             // Update the listbox
             UpdateGUI();
         }
+
+        private void mnuFileSave_Click(object sender, EventArgs e)
+        {
+            // Save the task list to a file
+            bool ok = taskManager.SaveTasksToFile(fileName);
+            if (ok)
+            {
+                MessageBox.Show("Tasks saved successfully!", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Could not save tasks!", "Save", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void mnuFileOpen_Click(object sender, EventArgs e)
+        {
+            // open the task list from the file
+            bool ok = taskManager.ReadTasksFromFile(fileName);
+            if (!ok)
+            {
+                MessageBox.Show("Could not load tasks!", "Open", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            UpdateGUI();
+        }
     }
 }

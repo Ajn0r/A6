@@ -128,6 +128,7 @@ namespace Assignment6
         // Method to read the tasks from a file
         public bool ReadTasksFromFile(string fileName)
         {
+            tasks.Clear();
             FileManager fileManager = new FileManager();
             return fileManager.ReadTaskListFromFile(fileName, tasks);
         }
