@@ -6,5 +6,10 @@ namespace Assignment6
         {
             InitializeComponent();
         }
+
+        private void mnuFileExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

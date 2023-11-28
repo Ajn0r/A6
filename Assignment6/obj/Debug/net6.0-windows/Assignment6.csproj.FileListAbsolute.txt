@@ -1,0 +1,16 @@
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\bin\Debug\net6.0-windows\Assignment6.exe
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\bin\Debug\net6.0-windows\Assignment6.deps.json
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\bin\Debug\net6.0-windows\Assignment6.runtimeconfig.json
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\bin\Debug\net6.0-windows\Assignment6.dll
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\bin\Debug\net6.0-windows\Assignment6.pdb
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\obj\Debug\net6.0-windows\Assignment6.MainForm.resources
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\obj\Debug\net6.0-windows\Assignment6.csproj.GenerateResource.cache
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\obj\Debug\net6.0-windows\Assignment6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\obj\Debug\net6.0-windows\Assignment6.AssemblyInfoInputs.cache
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\obj\Debug\net6.0-windows\Assignment6.AssemblyInfo.cs
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\obj\Debug\net6.0-windows\Assignment6.csproj.CoreCompileInputs.cache
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\obj\Debug\net6.0-windows\Assignment6.dll
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\obj\Debug\net6.0-windows\refint\Assignment6.dll
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\obj\Debug\net6.0-windows\Assignment6.pdb
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\obj\Debug\net6.0-windows\Assignment6.genruntimeconfig.cache
+C:\Users\ÄGARE\OneDrive\Skrivbord\Skola\C#\Kod\Assignment6\Assignment6\obj\Debug\net6.0-windows\ref\Assignment6.dll
