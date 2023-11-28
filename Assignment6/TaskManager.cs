@@ -100,7 +100,7 @@ namespace Assignment6
         }
 
         // Method to get the task info
-        public string[] GetTaskInfo(int index)
+        public string[] GetTaskInfo()
         {
             // String array to hold the task info
             string[] taskInfo = new string[tasks.Count];

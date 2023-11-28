@@ -82,6 +82,7 @@
             mnuFileNew.ShortcutKeys = Keys.Control | Keys.N;
             mnuFileNew.Size = new Size(141, 22);
             mnuFileNew.Text = "New";
+            mnuFileNew.Click += mnuFileNew_Click;
             // 
             // toolStripMenuItem1
             // 
@@ -185,6 +186,7 @@
             btnAdd.TabIndex = 7;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // grpBToDo
             // 
@@ -249,15 +251,15 @@
             // 
             lblTimer.AutoSize = true;
             lblTimer.BorderStyle = BorderStyle.FixedSingle;
-            lblTimer.Location = new Point(713, 406);
-            lblTimer.MinimumSize = new Size(75, 0);
+            lblTimer.Location = new Point(737, 406);
             lblTimer.Name = "lblTimer";
-            lblTimer.Size = new Size(75, 17);
+            lblTimer.Size = new Size(2, 17);
             lblTimer.TabIndex = 9;
             // 
             // timer
             // 
             timer.Interval = 1000;
+            timer.Tick += clock_Tick;
             // 
             // openFileDialog
             // 
