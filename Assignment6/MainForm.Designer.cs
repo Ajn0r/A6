@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             menuStrip1 = new MenuStrip();
             mnuFile = new ToolStripMenuItem();
             mnuFileNew = new ToolStripMenuItem();
@@ -52,6 +53,9 @@
             lblListDate = new Label();
             listBToDo = new ListBox();
             lblTimer = new Label();
+            timer = new System.Windows.Forms.Timer(components);
+            openFileDialog = new OpenFileDialog();
+            saveFileDialog = new SaveFileDialog();
             menuStrip1.SuspendLayout();
             grpBToDo.SuspendLayout();
             SuspendLayout();
@@ -76,36 +80,36 @@
             // 
             mnuFileNew.Name = "mnuFileNew";
             mnuFileNew.ShortcutKeys = Keys.Control | Keys.N;
-            mnuFileNew.Size = new Size(180, 22);
+            mnuFileNew.Size = new Size(141, 22);
             mnuFileNew.Text = "New";
             // 
             // toolStripMenuItem1
             // 
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(177, 6);
+            toolStripMenuItem1.Size = new Size(138, 6);
             // 
             // mnuFileOpen
             // 
             mnuFileOpen.Name = "mnuFileOpen";
-            mnuFileOpen.Size = new Size(180, 22);
+            mnuFileOpen.Size = new Size(141, 22);
             mnuFileOpen.Text = "Open file";
             // 
             // mnuFileSave
             // 
             mnuFileSave.Name = "mnuFileSave";
-            mnuFileSave.Size = new Size(180, 22);
+            mnuFileSave.Size = new Size(141, 22);
             mnuFileSave.Text = "Save file";
             // 
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(177, 6);
+            toolStripMenuItem2.Size = new Size(138, 6);
             // 
             // mnuFileExit
             // 
             mnuFileExit.Name = "mnuFileExit";
             mnuFileExit.ShortcutKeys = Keys.Alt | Keys.F4;
-            mnuFileExit.Size = new Size(180, 22);
+            mnuFileExit.Size = new Size(141, 22);
             mnuFileExit.Text = "Exit";
             mnuFileExit.Click += mnuFileExit_Click;
             // 
@@ -251,6 +255,14 @@
             lblTimer.Size = new Size(75, 17);
             lblTimer.TabIndex = 9;
             // 
+            // timer
+            // 
+            timer.Interval = 1000;
+            // 
+            // openFileDialog
+            // 
+            openFileDialog.FileName = "openFileDialog1";
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -303,5 +315,8 @@
         private Label lblListHour;
         private Label lblListDate;
         private Label lblTimer;
+        private System.Windows.Forms.Timer timer;
+        private OpenFileDialog openFileDialog;
+        private SaveFileDialog saveFileDialog;
     }
 }
