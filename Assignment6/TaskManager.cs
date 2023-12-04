@@ -77,6 +77,19 @@ namespace Assignment6
             return false;
         }
 
+        // Method to change a task
+        public bool ChangeTask(int index, Task task)
+        {
+            // Check if the index is valid and that the task is not null
+            if (ValidateIndex(index) && task != null)
+            {
+                tasks[index] = task;
+                return true;
+            }
+            // If index is not valid, return false
+            return false;
+        }
+
         // Method to get the task at a specific index, return a copy of the task
         public Task GetTask(int index)
         {

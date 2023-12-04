@@ -54,8 +54,9 @@
             listBToDo = new ListBox();
             lblTimer = new Label();
             timer = new System.Windows.Forms.Timer(components);
-            openFileDialog = new OpenFileDialog();
-            saveFileDialog = new SaveFileDialog();
+            btnDelete = new Button();
+            btnChange = new Button();
+            toolTip = new ToolTip(components);
             menuStrip1.SuspendLayout();
             grpBToDo.SuspendLayout();
             SuspendLayout();
@@ -80,39 +81,39 @@
             // 
             mnuFileNew.Name = "mnuFileNew";
             mnuFileNew.ShortcutKeys = Keys.Control | Keys.N;
-            mnuFileNew.Size = new Size(180, 22);
+            mnuFileNew.Size = new Size(141, 22);
             mnuFileNew.Text = "New";
             mnuFileNew.Click += mnuFileNew_Click;
             // 
             // toolStripMenuItem1
             // 
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(177, 6);
+            toolStripMenuItem1.Size = new Size(138, 6);
             // 
             // mnuFileOpen
             // 
             mnuFileOpen.Name = "mnuFileOpen";
-            mnuFileOpen.Size = new Size(180, 22);
+            mnuFileOpen.Size = new Size(141, 22);
             mnuFileOpen.Text = "Open file";
             mnuFileOpen.Click += mnuFileOpen_Click;
             // 
             // mnuFileSave
             // 
             mnuFileSave.Name = "mnuFileSave";
-            mnuFileSave.Size = new Size(180, 22);
+            mnuFileSave.Size = new Size(141, 22);
             mnuFileSave.Text = "Save file";
             mnuFileSave.Click += mnuFileSave_Click;
             // 
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(177, 6);
+            toolStripMenuItem2.Size = new Size(138, 6);
             // 
             // mnuFileExit
             // 
             mnuFileExit.Name = "mnuFileExit";
             mnuFileExit.ShortcutKeys = Keys.Alt | Keys.F4;
-            mnuFileExit.Size = new Size(180, 22);
+            mnuFileExit.Size = new Size(141, 22);
             mnuFileExit.Text = "Exit";
             mnuFileExit.Click += mnuFileExit_Click;
             // 
@@ -145,7 +146,7 @@
             dateTimePicker.Name = "dateTimePicker";
             dateTimePicker.Size = new Size(222, 23);
             dateTimePicker.TabIndex = 2;
-            dateTimePicker.Value = new DateTime(2023, 11, 28, 11, 36, 52, 0);
+            dateTimePicker.Value = new DateTime(2023, 12, 4, 0, 0, 0, 0);
             // 
             // lblPriority
             // 
@@ -158,6 +159,7 @@
             // 
             // comboBPriority
             // 
+            comboBPriority.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBPriority.FormattingEnabled = true;
             comboBPriority.Location = new Point(453, 42);
             comboBPriority.Name = "comboBPriority";
@@ -248,6 +250,7 @@
             listBToDo.Name = "listBToDo";
             listBToDo.Size = new Size(764, 199);
             listBToDo.TabIndex = 0;
+            listBToDo.SelectedIndexChanged += listBToDo_SelectedIndexChanged;
             // 
             // lblTimer
             // 
@@ -263,15 +266,33 @@
             timer.Interval = 1000;
             timer.Tick += clock_Tick;
             // 
-            // openFileDialog
+            // btnDelete
             // 
-            openFileDialog.FileName = "openFileDialog1";
+            btnDelete.Location = new Point(124, 406);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(75, 23);
+            btnDelete.TabIndex = 10;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
+            // 
+            // btnChange
+            // 
+            btnChange.Location = new Point(27, 406);
+            btnChange.Name = "btnChange";
+            btnChange.Size = new Size(75, 23);
+            btnChange.TabIndex = 11;
+            btnChange.Text = "Change";
+            btnChange.UseVisualStyleBackColor = true;
+            btnChange.Click += btnChange_Click;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 432);
+            ClientSize = new Size(800, 437);
+            Controls.Add(btnChange);
+            Controls.Add(btnDelete);
             Controls.Add(lblTimer);
             Controls.Add(grpBToDo);
             Controls.Add(btnAdd);
@@ -320,7 +341,8 @@
         private Label lblListDate;
         private Label lblTimer;
         private System.Windows.Forms.Timer timer;
-        private OpenFileDialog openFileDialog;
-        private SaveFileDialog saveFileDialog;
+        private Button btnDelete;
+        private Button btnChange;
+        private ToolTip toolTip;
     }
 }
